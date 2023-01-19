@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
       </div>
             <hr  />
-      <div className="navbar-bottom mt-3  mx-32">
+      <div className="navbar-bottom mt-3 p-2 mx-32">
        <div className="navbar flex  justify-between   items-center">
         <div className="log text-4xl font-extrabold cursor-pointer ">RØDE</div>
         <div className="navbar-Links  col-span-2 ">

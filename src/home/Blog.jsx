@@ -9,19 +9,19 @@ const Blog = () => {
       para:"Here’s everything you need to know about the new Wireless GO II and RØDE Central updates"
     },
     {
-      title :"Introducing New Wireless GO II Firmware: Camera Presets, Nested Recordings and More",
-      img:"https://edge.rode.com/images/page/1/modules/7288/rode-wireless-go-II-insitu-girl-working-by-window-desk-jan-2021-580x509-54af56a.jpg",
-      para:"Here’s everything you need to know about the new Wireless GO II and RØDE Central updates"
+      title :"How to Use VideoMicro II with an iPhone or Android Smartphone",
+      img:"https://edge.rode.com/images/page/1/modules/7232/rode-videomicro-II-girl-vlogging-mona-vale-9-2022-580x509-rgb-6090x5344-ad52c48.jpg",
+      para:"In this article we take a look at how to mount and connect your VideoMicro II to your smartphone."
     },
     {
-      title :"Introducing New Wireless GO II Firmware: Camera Presets, Nested Recordings and More",
-      img:"https://edge.rode.com/images/page/1/modules/7288/rode-wireless-go-II-insitu-girl-working-by-window-desk-jan-2021-580x509-54af56a.jpg",
-      para:"Here’s everything you need to know about the new Wireless GO II and RØDE Central updates"
+      title :"Introducing the VideoMicro II Ultra-compact On-camera Microphone",
+      img:"https://edge.rode.com/images/page/1/modules/7218/rode-videomicro-II-girl-holding-camera-mona-vale-9-2022-8192x5464-rgb-580x509-cfb11a3.jpg",
+      para:"The VideoMicro II ultra-compact microphone builds on the iconic original with next-generation features for enhanced performance."
     },
     {
-      title :"Introducing New Wireless GO II Firmware: Camera Presets, Nested Recordings and More",
-      img:"https://edge.rode.com/images/page/1/modules/7288/rode-wireless-go-II-insitu-girl-working-by-window-desk-jan-2021-580x509-54af56a.jpg",
-      para:"Here’s everything you need to know about the new Wireless GO II and RØDE Central updates"
+      title :"Introducing the NT-USB+ Professional USB Microphone",
+      img:"https://edge.rode.com/images/page/1/modules/7095/rode-nt-usb-plus-insitu-girl-livingroom-musician-guitar-580x509.jpg",
+      para:"Based on the legendary NT-USB, the NT-USB+ is a professional-grade USB microphone loaded with next-generation features."
     },
 
   ]
@@ -29,21 +29,22 @@ const Blog = () => {
 
   return (
     <>
-      <div className="blog w-full  flex flex-col bg-slate-50 justify-center items-center ">
-          <h1 className='text-center w-full  text-4xl  font-semibold mt-5 text-golden p-5'>Latest From The RØDE Blog</h1>
-          <div className="container w-full flex justify-center">
-        <div className="container w-9/12 mt-6 flex justify-center ">
+      <div className="blog w-full   bg-slate-100 flex flex-col h-fit justify-center items-center ">
+          <h1 className='text-center w-full bg-white  text-4xl  font-semibold py-10 text-golden p-5'>Latest From The RØDE Blog</h1>
+
+           <div className="Card-container "> 
+          <div className=" w-[80rem]  mt-6 flex  justify-center  flex-wrap ">
           {
             cards && (
               cards.map((item,i)=>{
                 return(
-                  <div className="card bg-white w-1/2 text-center flex flex-col items-center" key={i}>
-                  <div className="h3 text-3xl">{item.title} </div>
+                  <div className="card py-6 w-[35rem]  space-x-1 bg-white m-4    mb-16   text-center flex flex-col items-center" key={i}>
+                  <div className="h3   h-28 text-center text-3xl">{item.title} </div>
                   <div className="img  ">
-                    <img src={item.img} alt="" />
+                    <img src={item.img} className="" alt="" />
                   </div>
-                  <div className="para  py-9 ">{item.para}</div>
-                 <div className="btn uppercase p-2 px-6 w-36 bg-golden rounded-full">Learn More</div>
+                  <div className="para px-2 py-9 ">{item.para}</div>
+                 <div className="btn uppercase p-2  w-36 bg-golden rounded-full hover:bg-transparent cursor-pointer hover:text-golden font-semibold hover:outline outline-offset-2 outline-2 text-white ">Learn More</div>
                  </div>
                 )
               })
@@ -54,7 +55,7 @@ const Blog = () => {
 
 
         </div>
-    </div>
+        </div>
       </>
   )
 }

@@ -5,6 +5,7 @@ import Bnr from './Bnr2'
 import Bnr3 from './Bnr3'
 import Bnr4 from './Bnr4'
 import Bnr5 from './Bnr5'
+import Expolor from './Expolor'
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <Bnr4/>
             <Bnr5/>
             <Blog/>
+            <Expolor/>
             
 
         </div>

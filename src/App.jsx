@@ -2,7 +2,7 @@ import './App.css'
 import Navbar from './Navbar/Navbar';
 import { BrowserRouter  } from 'react-router-dom';
 import Home from './home/Home';
-import Bnr from './home/Bnr2';
+import Footer from './Footer/Footer';
 function App() {
   
 
@@ -11,6 +11,7 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <Home/>
+    <Footer/>
     </BrowserRouter>
     </>
   )
